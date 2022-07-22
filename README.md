@@ -1,13 +1,23 @@
 # CUCU
 HOW TO RUN:
+
+
 Run the following commands in terminal:
+
 lex cucu.l
+
 yacc -d cucu.y 
+
 gcc lex.yy.c y.tab.c -lfl
+
 ./a.out Sample1.cu/Sample2.cu
 
+
 AFTER EXECUTION:
+
+
 After Execution of the above commands following files are generated:
+
 1>Parser.txt :
     It contains the structure of the source code according to our programming language.
     Output in the parser.txt is reccursive in nature according to how our parse tree is implemented.
@@ -24,6 +34,7 @@ After Execution of the above commands following files are generated:
 6>y.tab.h
 
 ASSUMPTIONS :
+
     1> Only whole numbers are allowed.
     
     2> Other tokens are : IF,ELSE,WHILE,TYPE,ID,NUM,REL_OP,RETURN.
